@@ -1,0 +1,45 @@
+\BOOKMARK [1][-]{section.1}{Introduction}{}% 1
+\BOOKMARK [1][-]{section.2}{The HELP fields. \040redA section that copies the figure used in Raph's paper, but goes into more detail about the nature of each of the fields, e.g. with the percentiles of dust intensities from the Planck maps and provides the definitive MOCs for the \(DR1\) survey boundaries \(electronically\)}{}% 2
+\BOOKMARK [1][-]{section.3}{The multi-wavelength surveys. \040red This refers to the summary in optical NIR in Raph's paper but lists also the other surveys \(i.e. at UV, X-ray, mid-IR, FIR, sub-mm and Radio\) and whether or not they are included in DR1. It might be sensible to merge this with the previous section}{}% 3
+\BOOKMARK [2][-]{subsection.3.1}{Data audit red \(not needed as a separate section\) A Section to define the data that will be included}{section.3}% 4
+\BOOKMARK [2][-]{subsection.3.2}{The depth of data red \(no longer needed as this is now a separate paper, but Intro might refer to this paper and subsequent DR1 results sections might relate to this\). A section to look at CIRB vs mag and the co-variances of the multi-wavelength data }{section.3}% 5
+\BOOKMARK [1][-]{section.4}{HELP Strategy \040red This Section will cover things that are related to the overall HELP philosophy and strategy that include, but go beyond DR1}{}% 6
+\BOOKMARK [2][-]{subsection.4.1}{Homogenisation}{section.4}% 7
+\BOOKMARK [2][-]{subsection.4.2}{Meta data}{section.4}% 8
+\BOOKMARK [2][-]{subsection.4.3}{Selection Functions}{section.4}% 9
+\BOOKMARK [2][-]{subsection.4.4}{Forced photometry red not done in DR1 so some discussion}{section.4}% 10
+\BOOKMARK [2][-]{subsection.4.5}{Blind catalogues, cross-matching and supplementary listsredSome of this should go into the strategy as it is not implemented in DR1, but this is where to discuss the blind SPIRE catalogues that Steven has produced, plus spec-z catalogues, radio catalogues?}{section.4}% 11
+\BOOKMARK [2][-]{subsection.4.6}{Open Science}{section.4}% 12
+\BOOKMARK [2][-]{subsection.4.7}{Tools}{section.4}% 13
+\BOOKMARK [1][-]{section.5}{The DR1 work-flow}{}% 14
+\BOOKMARK [2][-]{subsection.5.1}{Master List redBasically a very brief summary of Raph's paper, but really just pointing to it}{section.5}% 15
+\BOOKMARK [2][-]{subsection.5.2}{Prior catalogue and modelredDescribing how we define the different prior lists in each field/area}{section.5}% 16
+\BOOKMARK [2][-]{subsection.5.3}{XID+: the probabilistic deblender for confusion dominated maps}{section.5}% 17
+\BOOKMARK [3][-]{subsubsection.5.3.1}{HELP XID+ pipeline \040redDiscusses how this was applied for different bands and prior lists }{subsection.5.3}% 18
+\BOOKMARK [3][-]{subsubsection.5.3.2}{HELP XID+ data products}{subsection.5.3}% 19
+\BOOKMARK [3][-]{subsubsection.5.3.3}{XID+ extensions}{subsection.5.3}% 20
+\BOOKMARK [2][-]{subsection.5.4}{Blind catalogues, cross-matching and supplementary listsredSome of this should go into the strategy as it is not implemented in DR1, but this is where to discuss the blind SPIRE catalogues that Steven has produced, plus spec-z catalogues, radio catalogues?}{section.5}% 21
+\BOOKMARK [2][-]{subsection.5.5}{Photometric redshiftscolorred A summary of Ken's paper\(s\) and any details of exactly what is done for DR1 that is not included in those.}{section.5}% 22
+\BOOKMARK [2][-]{subsection.5.6}{Physical Modellingcolorred A summary of Kassia's paper\(s\) and any details of exactly what is done for DR1 that is not included in those.}{section.5}% 23
+\BOOKMARK [2][-]{subsection.5.7}{Databasecolorred needs some thought.}{section.5}% 24
+\BOOKMARK [1][-]{section.6}{Results redBeing an assessment of the size and quality of the DR1 product, depths, areas, numbers of sources and redshifts distributions, etc. }{}% 25
+\BOOKMARK [2][-]{subsection.6.1}{Summary of master list}{section.6}% 26
+\BOOKMARK [2][-]{subsection.6.2}{Summary of priors}{section.6}% 27
+\BOOKMARK [2][-]{subsection.6.3}{Summary of XID+catalogues}{section.6}% 28
+\BOOKMARK [2][-]{subsection.6.4}{Monochromatic depth maps, area vs 1-sigma depths for catalgues}{section.6}% 29
+\BOOKMARK [2][-]{subsection.6.5}{Monochromatic Completeness limits }{section.6}% 30
+\BOOKMARK [2][-]{subsection.6.6}{di-chromatic and multi-chromatic depths?}{section.6}% 31
+\BOOKMARK [2][-]{subsection.6.7}{number counts}{section.6}% 32
+\BOOKMARK [1][-]{section.7}{Extra section}{}% 33
+\BOOKMARK [2][-]{subsection.7.1}{P-value map sources \(probably not\)?}{section.7}% 34
+\BOOKMARK [2][-]{subsection.7.2}{Red objects}{section.7}% 35
+\BOOKMARK [1][-]{section.8}{Discussion and Conclusion}{}% 36
+\BOOKMARK [2][-]{subsection.8.1}{To include a section on science that is being done with this data set now}{section.8}% 37
+\BOOKMARK [2][-]{subsection.8.2}{Examples of tools}{section.8}% 38
+\BOOKMARK [2][-]{subsection.8.3}{How people can contribute}{section.8}% 39
+\BOOKMARK [1][-]{section.A1}{Multi-wavelength Survey AuditredObsolete?}{}% 40
+\BOOKMARK [2][-]{subsection.A1.1}{X-ray}{section.A1}% 41
+\BOOKMARK [2][-]{subsection.A1.2}{UV}{section.A1}% 42
+\BOOKMARK [2][-]{subsection.A1.3}{Optical}{section.A1}% 43
+\BOOKMARK [2][-]{subsection.A1.4}{NIR: 1-3m}{section.A1}% 44
+\BOOKMARK [1][-]{section.A2}{OBSIDS}{}% 45
