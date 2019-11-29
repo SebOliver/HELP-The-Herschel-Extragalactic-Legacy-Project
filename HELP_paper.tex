@@ -11,6 +11,7 @@
 \usepackage{amsmath}
 %\usepackage{ulem}
 \bibliographystyle{mnras}
+%\usepackage[T1]{fontenc}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % ANY OTHER DECLARATIONS HERE:
@@ -31,39 +32,48 @@ Investigator consortia and with important participation from NASA.}}
 {
   \parbox{\textwidth}
   {\raggedright S.J. Oliver$^{1}$\thanks{S.Oliver@Sussex.ac.uk},
+% Project scientists alphabetically
+  K.~Duncan,$^{2}$
   P.D.~Hurley,$^{1}$
+  K.~Ma\l{}ek,$^{3}$
+  R.~Shirley,$^{1,4,5}$
+  M.~Vaccari,$^{40}$
+% Alphabetically
   H.~Aussel,$^{7}$
   T.~Bakx,$^{20}$
   V.~Buat,$^{10}$
   D.~Burgarella,$^{10}$
+  M.C.~Campos~Varillas,$^{1}$
   N.~Christopher,$^{35}$
   S.~Duivenvoorden,$^{1}$
-  K.~Duncan,$^{30}$
   S.~Eales,$^{20}$
   A.~Efstathiou,$^{35}$
   E.A.~Gonz\'alez~Solares,$^{24}$
   M.~Griffin,$^{20}$
   M.~Jarvis,$^{40}$
 %  E.~Le~Floc'h,$^{7}$
-%  B.~Lo~Faro,$^{21}$
+  B.~Lo~Faro,$^{21}$
+  L.~Marchetti,$^{40}$
   V.~Papadopoulou,$^{35}$
   K.~Penner,$^{7}$
+  E.~Pons$^{24}$,
+  M.~Prescott,$^{40}$
   E.~Rigby,$^{30}$
   H.~Rottgering,$^{30}$
   Y.~Roehlly,$^{1}$
   J.~Scudder,$^{1}$
-  R.~Shirley,$^{1}$
   M.~Smith,$^{20}$
-  M.~Vaccari,$^{40}$
-  L.~Wang$^{2}$,
-  E.~Pons$^{24}$,
-  et. al.
+  and L.~Wang.$^{2}$
 }
 \vspace{0.4cm}\\
 \parbox{\textwidth}
 {\raggedright
   $^{1}$Astronomy Centre, Dept. of Physics \& Astronomy, University of Sussex,
   Brighton, BN1 9QH, UK\\
+  $^{2}$Sterrewacht Leiden, Universiteit Leiden, Leiden, Netherlands\\
+  $^{3}$National Centre for Nuclear Research, ul. Ho$\dot{z}$a 69, 00-681 Warszawa, Poland\\
+  $^{4}$Instituto de Astrof\'isica de Canarias, E-38205 La Laguna, Tenerife, Spain\\
+  $^{5}$Universidad de La Laguna, Dpto. Astrof\'isica, E-38206 La Laguna, Tenerife, Spain\\
   $^{7}$Laboratoire AIM-Paris-Saclay, CEA/DSM/Irfu - CNRS - Universit\'e Paris
   Diderot, CE-Saclay, pt courrier 131, F-91191 Gif-sur-Yvette, France\\
   $^{10}$Aix Marseille Univ, CNRS, LAM, Laboratoire d'Astrophysique de Marseille, 
@@ -73,7 +83,6 @@ Marseille, France\\
   $^{24}$Institute of Astronomy, University of Cambridge, Madingley Road,
   Cambridge CB3 0HA, UK\\
   $^{2}$Netherlands Institute for Space Research, SRON\\
-  $^{30}$Universiteit Leiden\\
   $^{35}$European University Cyprus\\
   $^{40}$UWC\\
   $^{50}$Stanford\\
@@ -106,25 +115,27 @@ obviously just to aid in understanding the structure}
 \begin{abstract}
   We describe a new project to collate, curate, homogenise and add-value to most 
   of the premium multi-wavelength extragalactic data sets over 1300 ${\rm
-  deg}^2$. The sky boundaries of \Herschel Extragalactic Legacy Project, HELP,  are currently defined by almost all of the \Herschel SPIRE extragalactic survey fields,
+  deg}^2$. The sky boundaries of \Herschel Extragalactic Legacy Project, HELP, 
+  are currently defined by almost all of the \Herschel SPIRE extragalactic survey fields,
   notably the \Herschel Multi-tiered Extragalactic Survey (HerMES) and the
   \Herschel Atlas survey (H-ATLAS). HELP brings together data at all wavelengths
   from radio to X-ray.  This paper describes the motivation and the principle
-  elements in the design of the project. Guiding principles are transparent or ``open" methodologies with care for reproducibility and identification of provenance. A Key element of the design focus
+  elements in the design of the project. Guiding principles are transparent or 
+  ``open" methodologies with care for reproducibility and identification of provenance. 
+  A key element of the design focuses
   around the homogenisation of calibration, meta data and the provision of
   information required to define the selection of the data in fashion that 
-  they can be used for statistical analysis. This goes significantly beyond what is available in standard virtual observatory protocols. The full
+  they can be used for statistical analysis. This goes significantly beyond 
+  what is available in standard virtual observatory protocols. The full
   scientific exploitation of this requires novel methods.  We  advocate
   probabilistic methods that extract information directly from the maps at long
   wavelengths, exploiting the prior information available at shorter wavelengths
   and providing full sampling of the posteriors rather than traditional
   catalogues. 
-
-
-  With this project definition paper we provide access to the first version of the full data set, and we provide a monolithic map of the largest SPIRE extragalactic
-  field at 385 deg$^2$. We also provides some basic tools to access the
-  information currently in the HELP database.   Software will made available
-  through github.  The database, data, are available through ....
+With this project definition paper we provide full access to the first data release of HELP (DR1),
+including a monolithic map of the largest SPIRE extragalactic
+  field at 385 deg$^2$, XXX PACS and SPIRE fluxes across YYY sq.deg. We also provide tools to access the
+  information currently in the HELP database. All software used for processing the data is publicly available on GitHub.  
 \end{abstract}
 
 \begin{keywords}
@@ -258,18 +269,21 @@ HeLMS.
 \begin{figure*}
   \centering \includegraphics[width=16cm]{figs/HELP-fields.png}
   \caption[HELP Sky]{Projection of the HELP fields onto the dust emission from
-    our own Galaxy.}\label{fig:helpsky}
+    our own Galaxy. Reproduced from \citet{Shirley:2019}}.\label{fig:helpsky}
 \end{figure*}
 
-\begin{figure}
-  \includegraphics[width=8cm]{figs/K_coverage_v1_2_full.pdf}
-  \caption[K-band coverage]{The cumulative area within HELP covered to a given
-    $K_{\rm AB}$ depth. In this case the depth has been defined using the
-    $\sigma$ from the flux errors of objects in the catalogues. This is an example
-    of the summary report that can be generated from the HELP database. Similar
-    plots can be generated for other bands, over individual fields and jointly
-    limiting in more than one band. }\label{fig:k}
-\end{figure}
+
+%Raph - removed this because we have covered opt-nir depths in Shirley et al
+%Adding 2d and MIPS + depths in its place.
+%\begin{figure}
+%  \includegraphics[width=8cm]{figs/K_coverage_v1_2_full.pdf}
+%  \caption[K-band coverage]{The cumulative area within HELP covered to a given
+%    $K_{\rm AB}$ depth. In this case the depth has been defined using the
+%    $\sigma$ from the flux errors of objects in the catalogues. This is an example
+%    of the summary report that can be generated from the HELP database. Similar
+%    plots can be generated for other bands, over individual fields and jointly
+%    limiting in more than one band. }\label{fig:k}
+%\end{figure}
 
 \begin{figure*}
   \centering \includegraphics[width=16cm, angle=0]{figs/helms_hers_xmm-lss-rgb-sm.pdf}
@@ -289,30 +303,44 @@ HeLMS.
     processing.}\label{fig:hs82}
 \end{figure*}
 
-\section[The multi-wavelength surveys.
-\\ \color{red} This refers to the summary in optical NIR in Raph's paper but lists also the other surveys (i.e. at UV, X-ray, mid-IR, FIR, sub-mm and Radio) and whether or not they are included in DR1.  It might be sensible to merge this with the previous section]
-{The multi-wavelength surveys}\label{sec:surveys}
+\subsection[The multi-wavelength surveys.\\ 
+{\color{red} This refers to the summary in optical NIR in Raph's paper but lists also the other surveys (i.e. at UV, X-ray, mid-IR, FIR, sub-mm and Radio) and whether or not they are included in DR1.  It might be sensible to merge this with the previous section}]{The multi-wavelength surveys.}\label{sec:surveys}
 
-\subsection[Data audit\\
-{\color{red} (not needed as a separate section) A Section to define the data that will be included}]{Data audit}
+The first stage of the HELP pipeline is to build a catalogue of auxiliary optical to mid infrared catalogues that combine to make the prior list for extraction of far-infrared fluxes. This positional cross match of over 50 public surveys is described in detail in \citep{Shirley:2019} and the process is summarised in section~\ref{sec:masterlist}. Here we summarise the various input data sets and their overall depths.
 
-\subsection[The depth of data\\
+
+\subsubsection[The depth of data\\
 {\color{red} (no longer needed as this is now a separate paper, but Intro might refer to this paper and subsequent DR1 results sections might relate to this). A section to look at CIRB vs mag and the co-variances of the
 multi-wavelength data }]{The depth of data}
+
+The depths of the input catalogues are of crucial importance in determining the depth of fluxes extracted from the far-infrared red maps. They also determine the depths and completeness of photometric redshifts and must be properly accounted for in building statistical samples of galaxies.
+
+
 
 \section[HELP Strategy \\
 {\color{red} This Section will cover things that are related to the overall HELP philosophy and strategy that include, but go beyond DR1}]{HELP Strategy}
 {\color{red} This Section will cover things that are related to the overall HELP philosophy and strategy that include, but go beyond DR1}
 
+HELP is designed to create a framework for wide area multiwavelength studies. In this first data release DR1 this is heavily determined by regions on the sky where the \emph{Herschel} SPIRE instrument observed deep extragalactic fields. In this paper we are presenting this first data release but also the software, tool, and other resources to move beyond the first release and be continuously updated with new deeper observations. Further, the aim is to provide tools to create statistically useful samples of objects taking into account the quality and features of the presently available data. 
+
 \subsection{Homogenisation}
+
+At the most basic level this means providing homogeneous data products in terms of measures, units, and data formats.
+
 \subsection{Meta data}
+
+The data presented here has been compiled with extensive meta data available. In order to aid the user in compiling references and other tasks, we have spent considerable effort in providing written descriptions of all the data in addition to machine readable files with links to papers, summaries of coverage and descriptions of instruments, including definitions of bands and links to transmission curves.
+
 \subsection{Selection Functions}
+
+The selection function is the probability of a galaxy being detected and included as a function of the galaxy properties. Determining the form of these functions is a major challenge over wide areas of the sky. In dedicated surveys it is common to construct, for instance, magnitude limited samples in an attempt to create as simple a selection function as possible. Here, we are collating previous surveys and so cannot determine survey design. We therefore need to develop tools to reverse engineer the selection function. A simple application of such a selection function could be for example: determine the volume over which a given object would be detected and present in the sample such that the objects density in the Universe can be estimated. This is crucial for producing empirical summaries of populations such as luminosity functions. The following list describes some selections functions at varying levels of sophistication:
+
 \begin{itemize}
   \item{Binary coverage:} Multi-Order Coverage maps, MOCs
   \item{Depth maps:} Multi-Order Depth maps, MODs
   \item{Completeness Curves:} Multi-Order Logistic Curves MOLCs. Based on
     logistic curve parameters, but also in multi-order
-  \item{Full likelihood function:} Not quite sure what we mean here.
+  \item{Full likelihood function:} The probability of a given galaxy being detected at a given redshift and position on the sky.
 \end{itemize}
 
 
@@ -324,10 +352,14 @@ original catalogues do not include the photometric data we require.
 \subsection[Blind catalogues, cross-matching and supplementary lists\\{\color{red}Some of this should go into the strategy as it is not implemented in DR1, but this is where to discuss the blind SPIRE catalogues that Steven has produced, plus spec-z catalogues, radio catalogues?}]{Blind catalogues, cross-matching and supplementary lists}
 
 \subsection[Open Science]{Open Science}
+The project has been implemented using open science frameworks. This has been achieved with the following general 
+
+
+
 \subsection{Tools}
 
 The philosophy with HELP is that we should be providing the data, meta data and
-tools that astronomers can easily carry out their scientific investigations
+tools such that astronomers can easily carry out their scientific investigations
 without a high level of instrument or survey-level expertise.  We have defined
 some specific scientific use-cases which should be achievable at the end of the
 project.  These are aimed to result in recipes at the level  that a postgraduate
@@ -360,11 +392,12 @@ Brief overview of the whole thing, before going into the details
 
 \subsection[Master List\\ {\color{red}Basically a very brief summary of Raph's paper, but really just pointing to it}]{Master list}
 \label{sec:masterlist}
-The HELP master list is contains optical, NIR and IRAC catalogues. It includes every 
+The HELP master list is contains optical, NIR and IRAC catalogues.  The production of the 
+\emph{masterlist} is described in detail in \citep{Shirley:2019}. It includes every 
 source with a measurement in at least one band. A positional cross match is then
 used to combine the various wavelengths and all sources are flagged to specify
 which regions it has measurements as well as whether it was in an area covered by a
-given band. Therefore if the object was not detected in some band and we have a measure 
+given band. Therefore, if the object was not detected in some band and we have a measure 
 of the depth available in that band, we have a measure for an upper limit for the flux in
 that band. We also provide a table of the original catalogue ids and the original catalogues.
 This means that where additional useful information is included in the input catalogue,
@@ -374,7 +407,7 @@ simple and well documented structure to facilitate independent validation and ex
 spurious sources including artefacts and those around bright stars stars (c)
 classification of sources }
 
-the master list for each field will have different levels of sophistication.
+The \emph{masterlist} is used to compute photometric redshifts.
 
 \begin{itemize}
   \item{Baseline: point list}
@@ -386,6 +419,8 @@ the master list for each field will have different levels of sophistication.
 
 \subsection[Prior catalogue and model\\{\color{red}Describing how we define the different prior lists in each field/area}]{A prior catalogue and model}
 
+{\sc XID+} is designed to accept a general prior probability on the flux of each object. The following gives an overview of the priors that it is possible to employ:
+
 \begin{itemize}
   \item{positional priors}
   \item{flux priors}
@@ -393,6 +428,8 @@ the master list for each field will have different levels of sophistication.
   \item{redshift, SED priors}
   \item{luminosity/environment priors}
 \end {itemize}
+
+For some science purposes it is useful to employ informative priors based on all the information available for a given source. For HELP, due to the widely varying data available on a given patch of sky we decided to employ a general prior which does not take account of the full multiwavelength flux values. 
 
 \subsection{\emph{XID+}: the probabilistic deblender for confusion dominated maps}
 For many of our fields, in addition to the SPIRE maps we also have Spitzer MIPS $\mathrm{\mu m}$ and Herschel PACS 100 and 160 $\mathrm{\mu m}$ maps that cover the mid to far-infra-red part of the electromagnetic spectrum. However, due to the relatively large beam size of the these maps compared to the galaxy density ($\approx 30$ per SPIRE beam for optical sources with $B < 28$), multiple galaxies can be located within the instrument beam. This is referred to as the problem of source confusion.
@@ -406,10 +443,17 @@ HELP uses XID+ to carry out forced photometry on the Spitzer MIPS, Herschel PACS
 
 Our list of prior sources are constructed from the master list, described in Section \ref{sec:masterlist}. Ideally, we would use all sources in the master list as our prior list. In reality, there are too many sources to constrain from the data, unless one goes to more informative priors. We therefore cut down the master list to sources detected in bands that are good tracers of infrared emission, such as K band or IRAC \citep{Duivenvorden:2018}. For fields covered by Spitzer, we use sources detected in any of the Spitzer IRAC bands. To remove any possible artefacts in the IRAC catalogues, We impose an additional constraint that sources must also have a detection in either the optical or NIR wavelength range (using the $opt_nir_det$ flag). 
 
+Across all HELP we define a prior for {\sc XID+} objects that is zero for some objects and flat between zero and the pixel value for obejcts that are in the `prior list'. The factors determining whether an object is in the list depend on the area of sky. For areas that have been surveyed by the \emph{Spitzer} IRAC i1 band an object is in the prior list if it is detected in IRAC i1 and has at least two optical detections and at least two NIR detections. For areas that have not been observed by IRAC i1, we first compute a total dust luminosity for each object using the CIGALE code. An object is then in the prior list if its predicted dust luminosity is above {\color{red} $10^{8.5}$. Need to check units}.
+
 
 %IRAC prior, selection function, opt_nir_detection, MIPS detection, notebooks
 %flag
 \subsubsection{HELP XID+ data products}
+
+For each object in the prior list \smallcaps{XID+} provides a posterior on the object flux in each of the \emph{Herschel} bands available. This posterior is given in the form of a sample of 2000 values which, if STAN is converged, should be sampled from the ture posterior. We summarise this in the form of a median, and error. This obviously assumes the posterior is Gaussian. However, we also provide the full posterior which could be used to check this or look for objects where fluxes are correlated with nearby objects. The medians and errors are used by the physical modelling. For individual objects of interest the full posterior and p-value maps (probabilistic residual maps) can be used to verify the quality of the fit. The final data product is a catalogue for each field with these summaries of the posterior for each object.
+
+
+
 \subsubsection{XID+ extensions}
 
 %reason for full prob dist. e.g. DESPHOT
@@ -436,22 +480,60 @@ Galaxy.
 
 \subsection[Photometric redshifts\\{color{red} A summary of Ken's paper(s) and any details of exactly what is done for DR1 that is not included in those.}]{Photometric redshifts}
 
-
+Photometric redshifts are computed using the method presented in \citep{Duncan:2017, Duncan:2018}. For the fields HDF-N, SA13, xFLS, and XMM-13hr we use the photometric redshifts presented in \cite{Zou:2019} based on Legacy Survey $grz$ fluxes and Wise W1, and W2.
 
 \subsection[Physical Modelling\\{color{red} A summary of Kassia's paper(s) and any details of exactly what is done for DR1 that is not included in those.}]{Physical Modelling}
+
+Physical modelling was conducted using the CIGALE code. The full methodology has been described for the ELAIS-N1 pilot field in \citep{Malek:2018}.
+
+
+
 \subsection[Database\\{color{red} needs some thought.}]{Database}
+All of the data is served at both the Herschel Database At Marseille (HeDAM) and mirrored at the Virtual Observatory at susseX (VOX).
+
+
+
 
 \section[Results\\ {\color{red}Being an assessment of the size and quality of the DR1 product, depths, areas, numbers of sources and redshifts distributions, etc.} ]{Results}
+
+Table~\ref{table:dr1_overview} gives an overview of the numbers of processed objects and areas associated with each field. All fields except the ecliptic poles have been fully processed through the HELP pipeline.
+
+\input{./dr1_overview.tex}
+
+
+Figure~\ref{fig:numbers_allfields} shows the differential number counts in the \emph{Herschel} bands PACS 100, PACS 160, SPIRE 250, SPIRE 350, and SPIRE 500.
+
+\begin{figure*} %[h]
+\centering
+\includegraphics[width=1.0\textwidth]{./figs/numbers_Herschel_allfields}
+\caption{\label{fig:numbers_allfields} The differential number counts in Herschel bands on each field. {\color{red} RERUN AFTER ALL FIELDS DONE. DO THESE LOOK OK?????}   }
+\end{figure*}
+
 \subsection{Summary of master list}
 \subsection{Summary of priors}
-\subsection{Summary of XID+catalogues}
+\subsection{Summary of XID+ catalogues}
 
-\subsection{Monochromatic depth maps, area vs 1-sigma depths for catalgues}
+\subsection{Monochromatic depth maps, area vs 1-sigma depths for catalogues}
+
+Figure~\ref{fig:bands_depths} shoes an overview of depths for each band compared to typical galaxy SEDs. {\color{red} ALSO INCLUDE some two d depth historgrams MIPS vs R???, RAPH NEEDS TO MAKE DEPTH MAPS FOR MIPS/PACS/SPIRE to make these figures. Also add deepest ugrizyJHKKs columns!!!}.
+
+\begin{figure*}
+\centering
+\includegraphics[width=0.9\textwidth]{./figs/band_depths_overviews_areaweighted_with_black_seds_wave}
+\caption{\label{fig:bands_depths}{\color{red} FIGURE FROM SHIRLEY ET AL BUT WITH MIPS PACS AND SPIRE TO BE ADDED!!!}The distribution of $5\sigma$ point-source depths in a 2 arcsec aperture for each broad band type (taking the deepest specific band available in a given HEALPix cell). The colour of each area is determined by the total area that data for that band is available. The areas of each probability density function are also weighted by the total area available for that band so that area in a given curve is proportionally related to area on the sky that a given band is available at a given depth. The combination of areas covered by either the $K$ or $K_s$ bands is the full 1270 deg.$^2$ of HELP. We also plot a typical HELP spectral energy distribution for a galaxy with star formation rate of 200~M$_\odot$/yr and a stellar mass of $10^{10}$~M$_\odot$ at various redshifts.}
+\end{figure*}
+
+
+
+
+
 \subsection{Monochromatic Completeness limits }
 
 \subsection{di-chromatic and multi-chromatic depths?}
 
 \subsection{number counts}
+{\color{red} a per field full page figure as in Shirley et al with spire 250,350, 500 number counts?}
+
 
 \section{Extra section}
 
@@ -466,6 +548,15 @@ Galaxy.
 \subsection{Examples of tools}
 
 \subsection{How people can contribute}
+
+
+To summarise: 
+
+\begin{itemize}
+\item We present forced far-infrared photometry over 1270 deg.$^2$ of prime extragalactic fields imaged by the \emph{Herschel} Space observatory. We calculate a posterior on the flux for all objects in a simply defined prior list chosen to be tightly correlated with far-infrared bright objects using Bayesian inference. 
+\item We present photometric redshifts, and physical properties calculated using spectral energy distribution modelling for XXX objects, chosen using a simple well defined selection function. 
+\item This new catalogue is presented alongside an array of other data products, including newly homogenised maps, supplementary catalogues and extensive tools for accessing these new data sets.
+\end{itemize}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % BIBLIOGRAPHY
@@ -590,6 +681,44 @@ HELP comprises the  Herschel OBSIDS: 1342257362, 1342247216,
 1342236240, 1342236234,1342236232, 1342234749.
 
 All products available through the HELP www pages \url{herschel.sussex.ac.uk}.
+
+
+\section{Database structure and access}
+
+
+DMU0	Pristine catalogues
+DMU1	Masterlist data
+DMU2	Field definitions
+DMU3	Morphologies (under development)
+DMU4	Bright Star Mask
+DMU5	Known Star Flag
+DMU6	Optical photometry validation
+DMU7	Optical photometry (under development)
+DMU8	Radio data - LOFAR & FIRST/NVSS/TGSS
+DMU9	Radio data - JVLA-DEEP & GMRT-DEEP
+DMU10	Data Fusion
+DMU11	Cross matching MIPS/PACS/SPIRE (under development)
+DMU12	Cross Matching LOFAR & FIRST/NVSS/TGSS
+DMU13	Cross Matching JVLA-DEEP & GMRT-DEEP
+DMU14	GALEX data
+DMU15	X-Ray data (under development)
+DMU16	WISE Photometry
+DMU17	MIPS Maps
+DMU18	PACS maps
+DMU19	SPIRE maps
+DMU20	MIPS blind photometry (under development)
+DMU21	PACS blind photometry (under development)
+DMU22	SPIRE blind photometry
+DMU23	Spec-z data
+DMU24	Photo-z
+DMU25	Prior model
+DMU26	XID+
+DMU27	Empirical models / templates (under development)
+DMU28	SED fitting / CIGALE
+DMU29	Radiative transfer models (under development)
+DMU30	Missing (supplementary) Sources (under development)
+DMU31	Tools
+DMU32	Merged catalogue
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%
